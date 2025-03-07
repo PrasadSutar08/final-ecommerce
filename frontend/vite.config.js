@@ -7,7 +7,7 @@ export default defineConfig({
 	server: {
 		proxy: {
 			"/api": {
-				target: BASE_URL
+				target: "http://localhost:5000"
 			},
 		},
 	},
