@@ -8,13 +8,7 @@
     }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html",
-      "headers": {
-        "Cache-Control": "s-maxage=0, must-revalidate"
-      }
-    }
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
 
