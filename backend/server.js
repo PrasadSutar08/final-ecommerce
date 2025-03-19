@@ -11,7 +11,6 @@ import cartRoutes from "./routes/cart.route.js";
 import couponRoutes from "./routes/coupon.route.js";
 import paymentRoutes from "./routes/payment.route.js";
 import analyticsRoutes from "./routes/analytics.route.js";
-
 import { connectDB } from "./lib/db.js";
 
 dotenv.config();
@@ -51,7 +50,8 @@ app.use((err, req, res, next) => {
     res.status(500).send("Something broke!");
 });
 
+
 app.listen(PORT, () => {
-    console.log("Server is running on " + BACKEND_URL);
+    console.log("Server is running on http://localhost:5000" );
     connectDB();
 });
